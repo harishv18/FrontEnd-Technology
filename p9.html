@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marquee Tag</title>
+</head>
+<body>
+  <h1>this is an marquee tag</h1>
+
+  <marquee behavior="slide" direction="left" >Hello from bangalore</marquee>
+  <marquee behavior="scroll" direction="left" id="test">Hello from bangalore</marquee>
+  <marquee behavior="alternate" direction="right" scrollAmount="10" height="100px" bgcolor="red">Hello from bangalore</marquee>
+  <script>
+    document.getElementById("test").onmouseenter = function() {
+      document.getElementById("test").stop();
+    }
+    document.getElementById("test").onmouseleave = function() {
+      document.getElementById("test").start();
+    }
+  </script>
+</body>
+</html>
